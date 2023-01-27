@@ -38,34 +38,35 @@ Code example:
 The generate_model() function is the main function of the program that generates a finite element model of a patient-specific lenticule mesh. It takes in a patient_information list as its input and uses it to generate the model. The function is composed of several smaller functions that each performs a specific task in the model generation process.
 Here is an overview of how the generate_model() function works:
 1.	The function starts by initializing the gmsh library and adding a new model to the library.
-code
-    gmsh.initialize() gmsh.model.add("lens") 
+
+`gmsh.initialize() gmsh.model.add("lens") `
 2.	The function then reads the patient's pentacam elevation data using the read_pentacam() function and returns a point cloud of the anterior and posterior surface of the cornea.
-code
-points_front, points_back = read_pentacam(patient_id) 
+
+`points_front, points_back = read_pentacam(patient_id) `
 3.	Next, the function removes the epithelium thickness from the elevation data using the remove_epithelium() function.
-code
-points_middle = remove_epithelium(points_front, points_back) 
+
+`points_middle = remove_epithelium(points_front, points_back) `
 4.	The function then calculates and models the ablation profile using the mrochen() function.
-code
-mrochen(points_middle, surgical_zone, ablation_zone, sphere, cylinder, angle, curvature) 
+
+`mrochen(points_middle, surgical_zone, ablation_zone, sphere, cylinder, angle, curvature) `
 5.	The function then uses the holes_in_lenticule() function to add holes to the lenticule, where the hooks of the uniaxial test attach to the sample. This function must be adapted to your loading situation
-code
-holes_in_lenticule(holes_dist) 
+
+`holes_in_lenticule(holes_dist) `
 6.	The function then uses the identify_surfaces() function to identify the surfaces of the complete model and the mesh_model() function to mesh the model.
-code
-surface_ids = identify_surfaces() mesh_model() 
+
+`surface_ids = identify_surfaces() mesh_model() `
 7.	Once the meshing is done, the function writes the Abaqus input file for the model to a folder called PatientInput using the write_Abaqus() function.
-code
-filename = os.pardir + "/PatientInput/" + patient_id + '.inp' write_Abaqus(filename, surface_ids, disp) 
+
+`filename = os.pardir + "/PatientInput/" + patient_id + '.inp' write_Abaqus(filename, surface_ids, disp)` 
 8.	Finally, the function finalizes the gmsh library and ends.
-code
-gmsh.finalize() 
+
+`gmsh.finalize() `
 
 # Code Examples
 
 Use of the ‘generate_model’ function 
 Code
+`
 # Import necessary packages
 import numpy as np
 import math
@@ -78,6 +79,7 @@ import os
 # Example usage of the generate_model function
 patient_information = ['Patient1', 6.0, 8.0, -5.0, 0.0, 90.0, -3.0, 4,0.4 ]
 generate_model(patient_information)
+`
 
 Here each field in patient information corresponds to: 
 1.	patient_id 
