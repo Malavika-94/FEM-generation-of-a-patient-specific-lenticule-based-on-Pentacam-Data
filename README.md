@@ -32,14 +32,14 @@ The following packages are required to run the script:
 •	os
 You can install these packages by running the following command in your terminal:
 Code example: 
-  pip install numpy math gmsh sys matplotlib trimesh os
+    pip install numpy math gmsh sys matplotlib trimesh os
 
 # How does it work?
 The generate_model() function is the main function of the program that generates a finite element model of a patient-specific lenticule mesh. It takes in a patient_information list as its input and uses it to generate the model. The function is composed of several smaller functions that each performs a specific task in the model generation process.
 Here is an overview of how the generate_model() function works:
 1.	The function starts by initializing the gmsh library and adding a new model to the library.
 code
-gmsh.initialize() gmsh.model.add("lens") 
+    gmsh.initialize() gmsh.model.add("lens") 
 2.	The function then reads the patient's pentacam elevation data using the read_pentacam() function and returns a point cloud of the anterior and posterior surface of the cornea.
 code
 points_front, points_back = read_pentacam(patient_id) 
