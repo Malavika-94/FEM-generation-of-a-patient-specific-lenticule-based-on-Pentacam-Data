@@ -71,7 +71,7 @@ Here is an overview of how the generate_model() function works:
 
 # Code Examples
 
-Use of the ‘generate_model’ function 
+## Example usage of the generate_model function
 ```
 # Import necessary packages
 import numpy as np
@@ -81,9 +81,7 @@ import sys
 import matplotlib.tri as mtri
 import trimesh
 import os
-```
-# Example usage of the generate_model function
-```
+
 patient_information = ['Patient1', 6.0, 8.0, -5.0, 0.0, 90.0, -3.0, 4,0.4 ]
 generate_model(patient_information)
 ```
