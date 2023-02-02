@@ -23,13 +23,14 @@ Once you have these dependencies installed, you can run the script by calling th
 It is important to note that the patient_information list must contain the following information in the specified order: patient_id, surgical_zone, ablation_zone, sphere, cylinder, angle, curvature, distance between attachments and displacement to be applied on model.
 # Prerequisites
 The following packages are required to run the script:
-•	Numpy 
-•	math
-•	gmsh
-•	sys
-•	matplotlib
-•	trimesh
-•	os
+***
+*	Numpy 
+*	math
+*	gmsh
+*	sys
+*	matplotlib
+*	trimesh
+*	os
 You can install these packages by running the following command in your terminal:
 Code example: 
 `pip install numpy math gmsh sys matplotlib trimesh os`
