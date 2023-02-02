@@ -12,12 +12,12 @@ It is assumed that the user has the necessary software and knowledge to edit and
 # Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 To get started with this project, you will need to have the following software installed on your local machine:
-***
-•	Python 3.x
-•	Gmsh (version 4.x)
-•	ABAQUS (version 6.x or higher) / FE *
-•	Pentacam elevation files in csv format for the patients you wish to generate models for
-•	Surgical data file 
+
+*	Python 3.x
+*	Gmsh (version 4.x)
+*	ABAQUS (version 6.x or higher) / FE *
+*	Pentacam elevation files in csv format for the patients you wish to generate models for
+*	Surgical data file 
 ***
 You will also need to have the patient_data.csv file in the same directory as the script which contains patient id & surgical parameters and the respective pentacam elevation file in csv format named as patient id
 Once you have these dependencies installed, you can run the script by calling the generate_model() function and passing in a list of patient ids for which you want to generate models.
@@ -112,7 +112,7 @@ To customize the input file for your specific needs, you can edit the following 
 It is important to note that the format of the input file is specific to Abaqus, and changing any parameter may also require changes in other sections of the code.
 # Troubleshooting
 Typical problems may occur when
-***
+
 1. Pentacam file formats may change
 2. Version changes on Python or GMSH
 
