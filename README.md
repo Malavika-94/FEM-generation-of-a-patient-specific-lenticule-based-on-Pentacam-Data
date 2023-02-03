@@ -13,9 +13,9 @@ It is assumed that the user has the necessary software and knowledge to edit and
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 To get started with this project, you will need to have the following software installed on your local machine:
 
-*	Python 3.x
-*	Gmsh (version 4.x)
-*	ABAQUS (version 6.x or higher) / FE *
+*	Python 3.6
+*	Gmsh (version 4.6)
+*	ABAQUS (version 2021 or higher) / FE tool
 *	Pentacam elevation files in csv format for the patients you wish to generate models for
 *	Surgical data file 
 ***
