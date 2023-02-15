@@ -9,6 +9,9 @@ This code is designed to generate a finite element mesh of human corneal lenticu
 This code is especially relevant for researchers and practitioners in the field of ophthalmology, as it allows for the generation of patient-specific models of corneal lenticules. This can lead to a better understanding of the microstructure and mechanics of the cornea, which is crucial for the development of new surgical techniques and the improvement of existing ones. 
 It is assumed that the user has the necessary software and knowledge to edit and run the input file for the simulation in ABAQUS. The user should have an understanding of the input file format and how to edit it to suit their needs. It is recommended to use caution and consult with experts in the field when using the code for research or clinical purposes.
 
+![FE_Git_small](https://user-images.githubusercontent.com/59921935/219064557-57a29323-d643-40c2-9a36-9ad338dee295.png)
+
+
 # Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 To get started with this project, you will need to have the following software installed on your local machine:
