@@ -121,4 +121,4 @@ Typical problems may occur when
 
 Please get in touch with the authors for any necessary clarifications
 # Citation
-Any reproduction or parts of this code must be cited as __.
+Any reproduction or parts of this code must be cited as: Nambiar, Malavika H. and Liechti, Layko and Studer, Harald and Roy, Abhijit S. and Seiler, Theo G. and Büchler, Philippe, Patient-Specific Finite Element Analysis of Human Corneal Lenticules: An Experimental and Numerical Study. Available at SSRN: https://ssrn.com/abstract=4378257 or http://dx.doi.org/10.2139/ssrn.4378257.
